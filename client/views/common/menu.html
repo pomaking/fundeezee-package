@@ -1,0 +1,23 @@
+<template name="menu">
+	<nav class="ui fluid three item fixed admin menu">
+		<div class="left dropdown item">
+			<div class="ui username dropdown">
+		    <div class="text">{{currentUser.username}}</div>
+		    <i class="dropdown icon"></i>
+		    <div class="menu">
+					<div class="logout item">Logout</div>
+		    </div>
+		  </div>
+		</div>
+		<div class="center item">
+			<a class="logo" href="{{pathFor 'home'}}">Landing Page Builder</a>
+		</div>
+		<div class="right item">
+			{{#if notAdmin}}
+		  	<a class="ui basic button" href="{{pathFor 'admin'}}">Edit</a>
+			{{else}}
+			  <a class="ui basic button cancel" href="{{pathFor 'home'}}">Cancel</a>
+			{{/if}}
+		</div>
+	</nav>
+</template>

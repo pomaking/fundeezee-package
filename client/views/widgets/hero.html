@@ -1,0 +1,22 @@
+<template name="hero">
+  {{#if newsletter}}
+    <div class="ui two column stackable page grid">
+      <div class="content column">
+        <h4>{{heroTitle}}</h4>
+        <p>{{heroContent}}</p>
+        <img class="ui small centered image" src="{{heroImage}}" />
+      </div>
+      <div class="form column">
+        {{> subscribe}}
+      </div>
+    </div>
+  {{else}}
+    <div class="ui stackable page grid">
+      <div class="content column">
+        <h4>{{heroTitle}}</h4>
+        <p>{{heroContent}}</p>
+        <img class="ui small centered image" src="{{heroImage}}" />
+      </div>
+    </div>
+  {{/if}}
+</template>

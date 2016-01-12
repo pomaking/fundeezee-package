@@ -1,0 +1,7 @@
+<template name='reactionFundeezee'>
+  {{#if Template.subscriptionsReady}}
+    {{#each fundeezeeTemplates}}
+     {{> Template.dynamic template=this data=settings }}
+    {{/each}}
+  {{/if}}
+</template>

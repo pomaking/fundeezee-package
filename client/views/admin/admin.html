@@ -1,0 +1,16 @@
+<template name="admin">
+	<div class="animated fadeIn admin">
+		{{#autoForm collection='Contents' doc=this class='ui admin form' id='editContent' type='update' validation='keyup'}}
+		  {{> editor}}
+			{{> settings}}
+			<div class="ui admin actions">
+			  <button type="submit" class="ui save icon button">
+					Save
+			  </button>
+				<button type="button" class="ui settings icon button">
+					Settings
+				</button>
+			</div>
+		{{/autoForm}}
+	</div>
+</template>

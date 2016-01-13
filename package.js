@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Fundeezee - Fundraiser Management for Organizations, Businesses, and Members",
-  name: "orgora:reaction-fundeezee",
+  name: "orgora:fundeezee-package",
   version: "0.0.1",
   documentation: "README.md"
 });

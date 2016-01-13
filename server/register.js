@@ -1,6 +1,6 @@
 ReactionCore.registerPackage({
   label: "Fundeezee",
-  name: "reaction-fundeezee",
+  name: "fundeezee-package",
   icon: "fa fa-bar-chart-o",
   autoEnable: true,
   settings: {
